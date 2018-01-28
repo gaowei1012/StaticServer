@@ -18,3 +18,7 @@ app.use( async (ctx) => {
 app.listen(3000, () => {
     console.log('静态服务启动成功！')
 })
+/**
+ *  Koa-Static 中间件
+ * 
+ */
