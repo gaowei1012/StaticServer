@@ -1,0 +1,22 @@
+{
+  "name": "staticserver",
+  "version": "0.0.1",
+  "description": "Koa2 静态资源服务",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmw-zjw/StaticServer.git"
+  },
+  "author": "执念",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmw-zjw/StaticServer/issues"
+  },
+  "homepage": "https://github.com/gmw-zjw/StaticServer#readme",
+  "dependencies": {
+    "koa": "^2.0.0-alpha.8"
+  }
+}
