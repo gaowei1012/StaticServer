@@ -1,5 +1,6 @@
 const Koa = require('koa')
 const path = require('path')
+
 const content = require('./util/content')
 const mimes = require('./util/mimes')
 
@@ -33,7 +34,7 @@ app.use( async (ctx) => {
     }
 
     // 输出静态资源内容
-    if (_mime && mime.indexOf('image/') >= 0 ) {
+    if (_mime && _mime.indexOf('image/') >= 0 ) {
 
         // 如果是图片 ， 则用node原生res， 输出二进制数据
         ctx.res.writeHead(200)

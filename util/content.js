@@ -2,17 +2,17 @@
  *  读取请求内容
  */
 
- const path = require('path')
- const fs = require('fs')
+const path = require('path')
+const fs = require('fs')
 
- /* 封装读取目录内容方法 */
- const dir = require('./dir')
+/* 封装读取目录内容方法 */
+const dir = require('./dir')
 
- /* 封装读取文件内容方法 */
- const file = require('./file')
+/* 封装读取文件内容方法 */
+const file = require('./file')
 
- async function content(ctx, fullStaticPath) {
-     
+async function content(ctx, fullStaticPath) {
+
     // 封装请求资源的完整绝对路径
     let reqPath = path.join(fullStaticPath, ctx.url)
 
@@ -32,7 +32,7 @@
         let stat = fs.statSync(reqPath)
 
         if (stat.isDirectory()) {
-            
+
             // 如果为目录， 则宣读读取目录内容
             content = dir(ctx.url, reqPath)
         } else {
@@ -43,6 +43,6 @@
     }
 
     return content
- }
+}
 
- module.exports = content
+module.exports = content

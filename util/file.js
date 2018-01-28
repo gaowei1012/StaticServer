@@ -12,7 +12,7 @@ const fs = require('fs')
 
 function file(filePath) {
     
-    let content = fs.readdirSync(filePath, 'binary')
+    let content = fs.readFileSync(filePath, 'binary')
     return content
 }
 
