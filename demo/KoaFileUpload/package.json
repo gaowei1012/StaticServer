@@ -1,0 +1,15 @@
+{
+  "name": "koafileupdate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "执念",
+  "license": "ISC",
+  "dependencies": {
+    "busboy": "^0.2.14",
+    "koa": "^2.0.0-alpha.8"
+  }
+}
